@@ -1,0 +1,26 @@
+{
+  "name": "n1-rush",
+  "version": "0.0.1",
+  "description": "projeto para vaga na agência top",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"não existem comandos de test no momento\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cezarvasconcelos/vagadev-jr.git"
+  },
+  "keywords": [
+    "js",
+    "html",
+    "css",
+    "vanilla",
+    "swiper"
+  ],
+  "author": "Cezar Vasconcelos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cezarvasconcelos/vagadev-jr/issues"
+  },
+  "homepage": "https://github.com/cezarvasconcelos/vagadev-jr#readme"
+}
