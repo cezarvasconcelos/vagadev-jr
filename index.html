@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg" href="./svgs/logo-N1-transparent-bg.svg" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+
+    <title>Rush</title>
+  </head>
+  <!-- 
+       #TODO
+       [] - mobile first 
+       [] - header
+       [] - banner (carousel)
+       [] - produtos destaque
+       [] - produtos prateleira (carousel alike no mobile)
+       [] - footer
+       [] - menu
+       [] - desktop
+       [] - fonte (Roboto)
+       [] - animações
+            [] - "pedido sucesso"
+            [] - "botão comprar/comprado"
+            [] - icone carrinho atualizado (qtde)
+    -->
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="header-left">
+          <button class="btn-icon">
+            <img src="svgs/icon_hamburguer.svg" />
+          </button>
+          <a class="logo-anchor"> <img class="logo" src="svgs/logo-N1-transparent-bg.svg" /></a>
+        </div>
+
+        <div class="header-right">
+          <button class="btn-icon">
+            <img src="svgs/paper-plane.svg" />
+          </button>
+          <button class="btn-icon">
+            <img src="svgs/search-solid.svg" />
+          </button>
+          <button class="btn-icon">
+            <img src="svgs/shopping-bag-solid.svg" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Modal ao compar algo (em breve)-->
+
+      <!-- slides topo -->
+      <section class="section-topo">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Banners -->
+            <div class="swiper-slide">
+              <img src="img/principal_banner_mobile.jpg" alt="" srcset="" />
+            </div>
+          </div>
+
+          <div class="carousel-info">
+            <div class="carousel-title">
+              <h3 class="carousel-gameTitle">Textao</h3>
+              <span class="carousel-line"></span>
+            </div>
+
+            <div class="carousel-control">
+              <!-- mostrar paginação -->
+              <div class="carousel-contador">
+                <h3 class="carousel-pagination">
+                  <div class="swiper-pagination"></div>
+                </h3>
+              </div>
+
+              <!-- botões de navegação -->
+              <div class="carousel-buttons">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container-main">
+        <section class="section-banner">
+          <div class="banner-conteudo"></div>
+          <div class="banner-conteudo"></div>
+        </section>
+
+        <section class="section-produtos">
+          <div class="title-shelf">
+            <h2>Produtos em destaque</h2>
+          </div>
+          <div class="grid-produtos">
+            <article class="produto">
+              <header class="produto-header">
+                <img src="svgs/grid-prateleira.svg" alt="" class="produto-img" />
+              </header>
+              <div class="produto-body">
+                <h3 class="produto-name">Produto</h3>
+                <span class="produto-preco">R$ </span>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="swipperInit.js"></script>
+</html>
