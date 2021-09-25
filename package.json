@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/cezarvasconcelos/vagadev-jr/issues"
   },
-  "homepage": "https://github.com/cezarvasconcelos/vagadev-jr#readme"
+  "homepage": "https://github.com/cezarvasconcelos/vagadev-jr#readme",
+  "dependencies": {
+    "swiper": "^7.0.6"
+  }
 }
