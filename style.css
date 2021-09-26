@@ -3,6 +3,8 @@
   --dark-blue: #084154;
   --blue: #3ec6e0;
   --silver: #ebebeb;
+  --swiper-navigation-size: 1.2em !important;
+  --swiper-theme-color: #ffffff !important;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
@@ -86,36 +88,111 @@ a {
 }
 /* Section topo */
 .section-topo {
-  border: 1px solid rgb(87, 255, 9);
+  /* border: 1px solid rgb(87, 255, 9); */
+}
+.swiper-container {
+  position: relative;
+  /* border: 1px solid rgb(6, 7, 6); */
+}
+.carousel-images {
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 .carousel-info {
-  border: 1px solid rgb(255, 0, 179);
+  display: flex;
+  z-index: 20;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  width: 375px;
+  height: 52px;
 }
 .carousel-title {
-  border: 1px solid rgb(4, 0, 255);
+  background-color: var(--blue);
+  width: 65%;
+  flex-basis: 1;
+  border-radius: 0px 0px 0px 10px;
+  display: flex;
+  align-items: center;
 }
 .carousel-gameTitle {
-  border: 1px solid rgb(255, 174, 0);
+  margin-left: 22px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-transform: uppercase;
 }
 .carousel-line {
-  border: 1px solid rgb(0, 26, 255);
+  /* width: 50%; */
+  /* border: 1px solid rgb(248, 15, 7); */
 }
 .carousel-control {
-  border: 1px solid rgb(247, 0, 0);
+  position: relative;
+  background-color: var(--dark-blue);
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.carousel-contador {
-  border: 1px solid rgb(255, 145, 0);
-}
-.carousel-pagination {
-  border: 1px solid rgb(229, 255, 0);
-}
-.carousel-buttons {
-  border: 1px solid rgb(81, 255, 0);
+.swiper-pagination-fraction {
+  position: static !important;
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  bottom: auto !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
+.swiper {
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  bottom: auto !important;
+}
+.swiper-pagination {
+  color: white;
+  height: 17px !important;
+  width: 49% !important;
+
+  /* position: absolute; */
+}
+.carousel-buttons {
+  display: flex;
+  /* border: 1px solid rgb(255, 17, 17); */
+  height: 100% !important;
+  width: 49% !important;
+  /* position: absolute; */
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: auto;
+  justify-content: space-between;
+  /* bottom: 0; */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  /* border: 1px solid rgb(102, 255, 0); */
+  position: static !important;
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  bottom: auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin-top: auto !important;
+}
+.swiper-button-prev {
+  margin-left: -1em;
+}
 /* Section main */
 .container-main {
-  border: 1px solid red;
+  /* border: 1px solid rgb(102, 255, 0); */
 }
 
 .section-banner {

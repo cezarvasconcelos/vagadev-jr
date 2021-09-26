@@ -6,6 +6,7 @@ const swiper = new Swiper('.swiper', {
 
 	pagination: {
 		el: '.swiper-pagination',
+		type: 'fraction',
 	},
 
 	navigation: {
@@ -18,6 +19,6 @@ const swiper = new Swiper('.swiper', {
 	},
 
 	autoplay: {
-		delay: 5000,
+		delay: 200000,
 	},
 });
