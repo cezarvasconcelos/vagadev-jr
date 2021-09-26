@@ -23,3 +23,148 @@ html {
 a {
   text-decoration: none;
 }
+
+.header {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* border: 1px solid red; */
+  background: transparent;
+}
+.header-container {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid rgb(0, 255, 21); */
+  width: 90%;
+}
+
+.header-left {
+  justify-self: flex-start;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* border: 1px solid rgb(25, 0, 255); */
+  flex-grow: 1;
+}
+.logo-anchor {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid rgb(208, 255, 0); */
+  width: 107px;
+  height: 25px;
+}
+.logo {
+  margin-left: 1em;
+  width: 107px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid rgb(255, 145, 0); */
+  flex-grow: 2;
+  justify-content: space-around;
+}
+.btn-icon {
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+}
+.paper-plane {
+  margin-bottom: 0.4em;
+}
+.icon-hamburger {
+  /* background-image: url(svgs/icon_hamburguer.svg); */
+  fill: var(--silver);
+}
+/* Section topo */
+.section-topo {
+  border: 1px solid rgb(87, 255, 9);
+}
+.carousel-info {
+  border: 1px solid rgb(255, 0, 179);
+}
+.carousel-title {
+  border: 1px solid rgb(4, 0, 255);
+}
+.carousel-gameTitle {
+  border: 1px solid rgb(255, 174, 0);
+}
+.carousel-line {
+  border: 1px solid rgb(0, 26, 255);
+}
+.carousel-control {
+  border: 1px solid rgb(247, 0, 0);
+}
+.carousel-contador {
+  border: 1px solid rgb(255, 145, 0);
+}
+.carousel-pagination {
+  border: 1px solid rgb(229, 255, 0);
+}
+.carousel-buttons {
+  border: 1px solid rgb(81, 255, 0);
+}
+
+/* Section main */
+.container-main {
+  border: 1px solid red;
+}
+
+.section-banner {
+  border: 1px solid red;
+}
+.banner-conteudo {
+  border: 1px solid red;
+}
+.section-produtos {
+  border: 1px solid red;
+}
+.title-shelf {
+  border: 1px solid red;
+}
+.grid-produtos {
+  border: 1px solid red;
+}
+.produto {
+  border: 1px solid red;
+}
+.produto-header {
+  border: 1px solid red;
+}
+.produto-body {
+  border: 1px solid red;
+}
+.produto-name {
+  border: 1px solid red;
+}
+.produto-preco {
+  border: 1px solid red;
+}
+.btn-comprar {
+  border: 1px solid red;
+}
+
+/* Footer */
+.footer {
+  border: 1px solid red;
+}
+.footer-left {
+  border: 1px solid red;
+}
+.footer-logo {
+  border: 1px solid red;
+}
+.footer-right {
+  border: 1px solid red;
+}
+.footer-text {
+  border: 1px solid red;
+}
