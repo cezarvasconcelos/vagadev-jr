@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
-:root {
-  /* Color Styles */
-  --dark-blue: #084154;
-  --blue: #3ec6e0;
-  --silver: #ebebeb;
-  --swiper-navigation-size: 1.2em;
-  --swiper-theme-color: #ffffff;
-}
-
 .header {
   position: absolute;
   z-index: 99;
@@ -26,9 +17,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
+}
+
+@media (min-width: 900px) {
+  .header-container {
+    width: 70%;
+  }
 }
 
 .header-left {
@@ -76,6 +77,38 @@
       justify-content: space-around;
 }
 
+@media (min-width: 900px) {
+  .header-right {
+    justify-self: flex-end;
+  }
+}
+
+.header-icon {
+  padding: 0.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon-hamburger {
+  fill: var(--silver);
+}
+
+.header-icon-text {
+  text-transform: uppercase;
+  padding: 10%;
+  color: var(--white);
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .header-icon-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .btn-icon {
   background: transparent;
   width: 25px;
@@ -84,12 +117,19 @@
   cursor: pointer;
 }
 
-.paper-plane {
-  margin-bottom: 0.4em;
+.search {
+  position: relative;
+  top: 4px;
 }
 
-.icon-hamburger {
-  fill: var(--silver);
+.paper-plane {
+  position: relative;
+  bottom: 3px;
+}
+
+.paper-bag {
+  position: relative;
+  bottom: 5px;
 }
 
 .swiper-container {
@@ -236,6 +276,7 @@
 }
 
 .carousel-control {
+  min-height: 52px;
   background-color: var(--dark-blue);
   width: 35%;
   display: -webkit-box;
@@ -309,7 +350,7 @@
 }
 
 .banner-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -572,12 +613,23 @@
   color: #ffffff;
 }
 
+:root {
+  /* Color Styles */
+  --dark-blue: #084154;
+  --blue: #3ec6e0;
+  --silver: #ebebeb;
+  --swiper-navigation-size: 1.2em;
+  --swiper-theme-color: #ffffff;
+  --white: #ffffff;
+  --font-size: 16px;
+}
+
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 16px;
+  font-size: var(--font-size);
   /* background-color: var(--dark-blue); */
 }
 
@@ -601,6 +653,11 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: var(--blue);
+}
+
+button svg {
+  width: calc(var(--font-size) * 2);
+  height: calc(var(--font-size) * 2);
 }
 
 /* Section main */

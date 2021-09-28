@@ -31,6 +31,7 @@
 .carousel-line {
 }
 .carousel-control {
+  min-height: 52px;
   background-color: var(--dark-blue);
   width: 35%;
   display: flex;

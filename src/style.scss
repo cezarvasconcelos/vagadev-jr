@@ -1,11 +1,4 @@
-:root {
-  /* Color Styles */
-  --dark-blue: #084154;
-  --blue: #3ec6e0;
-  --silver: #ebebeb;
-  --swiper-navigation-size: 1.2em;
-  --swiper-theme-color: #ffffff;
-}
+$layout-breakpoint-desktop: 900px;
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
 @import "css/components/header";
@@ -16,19 +9,22 @@
 @import "css/components/shelf-products";
 @import "css/components/footer";
 
-
-@mixin flexCenter($direction) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: $direction;
+:root {
+  /* Color Styles */
+  --dark-blue: #084154;
+  --blue: #3ec6e0;
+  --silver: #ebebeb;
+  --swiper-navigation-size: 1.2em;
+  --swiper-theme-color: #ffffff;
+  --white: #ffffff;
+  --font-size: 16px;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: var(--font-size);
   /* background-color: var(--dark-blue); */
 }
 
@@ -54,6 +50,11 @@ body::-webkit-scrollbar-thumb {
   background: var(--blue);
 }
 
+button svg {
+  // padding-right: 1em;
+  width: calc(var(--font-size) * 2);
+  height: calc(var(--font-size) * 2);
+}
 /* Section main */
 
 .container-main {

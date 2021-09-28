@@ -18,7 +18,6 @@
 
   <body>
     <header class="header">
-      <!-- Não precisa existir eu acho -->
       <div class="header-container">
         <div class="header-left">
           <button class="btn-icon">
@@ -58,39 +57,49 @@
         </div>
 
         <div class="header-right">
-          <button class="btn-icon paper-plane">
-            <svg width="31.969" height="29.237" viewBox="0 0 31.969 29.237">
-              <path
-                id="paper-plane"
-                d="M3.594,5.344l.438,1.875L5.969,16,4.031,24.781l-.437,1.875,1.781-.719,22-9L29.656,16l-2.281-.937-22-9ZM6.375,8.656,21.906,15H7.781ZM7.781,17H21.906L6.375,23.344Z"
-                transform="translate(-5.27 5.639) rotate(-21)"
-                fill="#fff"
-                style="fill: #ffffff"
-              />
-            </svg>
-          </button>
-          <button class="btn-icon">
-            <svg width="25.719" height="25.719" viewBox="0 0 25.719 25.719">
-              <path
-                id="search-solid"
-                d="M19,3a9.995,9.995,0,0,0-7.75,16.313L3.281,27.281l1.438,1.438,7.969-7.969A10,10,0,1,0,19,3Zm0,2a8,8,0,1,1-8,8A7.985,7.985,0,0,1,19,5Z"
-                transform="translate(-3.281 -3)"
-                fill="#fff"
-                style="fill: #ffffff"
-              />
-            </svg>
-          </button>
-          <button class="btn-icon">
-            <svg width="22.125" height="26" viewBox="0 0 22.125 26">
-              <path
-                id="shopping-bag-solid"
-                d="M16,3a5.02,5.02,0,0,0-5,5V9H6.063L6,9.938l-1,18L4.938,29H27.063L27,27.938l-1-18L25.938,9H21V8A5.02,5.02,0,0,0,16,3Zm0,2a3,3,0,0,1,3,3V9H13V8A3,3,0,0,1,16,5ZM7.938,11H11v3h2V11h6v3h2V11h3.063l.875,16H7.063Z"
-                transform="translate(-4.938 -3)"
-                fill="#fff"
-                style="fill: #ffffff"
-              />
-            </svg>
-          </button>
+          <div class="header-icon">
+            <button class="btn-icon paper-plane">
+              <svg width="31.969" height="29.237" viewBox="0 0 31.969 29.237">
+                <path
+                  id="paper-plane"
+                  d="M3.594,5.344l.438,1.875L5.969,16,4.031,24.781l-.437,1.875,1.781-.719,22-9L29.656,16l-2.281-.937-22-9ZM6.375,8.656,21.906,15H7.781ZM7.781,17H21.906L6.375,23.344Z"
+                  transform="translate(-5.27 5.639) rotate(-21)"
+                  fill="#fff"
+                  style="fill: #ffffff"
+                />
+              </svg>
+            </button>
+            <div class="header-icon-text">Contato</div>
+          </div>
+          <div class="header-icon">
+            <button class="btn-icon search">
+              <svg width="25.719" height="25.719" viewBox="0 0 25.719 25.719">
+                <path
+                  id="search-solid"
+                  d="M19,3a9.995,9.995,0,0,0-7.75,16.313L3.281,27.281l1.438,1.438,7.969-7.969A10,10,0,1,0,19,3Zm0,2a8,8,0,1,1-8,8A7.985,7.985,0,0,1,19,5Z"
+                  transform="translate(-3.281 -3)"
+                  fill="#fff"
+                  style="fill: #ffffff"
+                />
+              </svg>
+            </button>
+            <div class="header-icon-text">Pesquisar</div>
+          </div>
+
+          <div class="header-icon">
+            <button class="btn-icon paper-bag">
+              <svg width="22.125" height="26" viewBox="0 0 22.125 26">
+                <path
+                  id="shopping-bag-solid"
+                  d="M16,3a5.02,5.02,0,0,0-5,5V9H6.063L6,9.938l-1,18L4.938,29H27.063L27,27.938l-1-18L25.938,9H21V8A5.02,5.02,0,0,0,16,3Zm0,2a3,3,0,0,1,3,3V9H13V8A3,3,0,0,1,16,5ZM7.938,11H11v3h2V11h6v3h2V11h3.063l.875,16H7.063Z"
+                  transform="translate(-4.938 -3)"
+                  fill="#fff"
+                  style="fill: #ffffff"
+                />
+              </svg>
+            </button>
+            <div class="header-icon-text">(2)</div>
+          </div>
         </div>
       </div>
     </header>
@@ -100,13 +109,13 @@
 
       <!-- slides topo -->
       <section class="section-topo">
+        <!-- Slides e paginação/titulo game -->
         <div class="swiper swiper-container swiper-custom">
           <div class="swiper-wrapper carousel-images">
-            <!-- Banners -->
             <div class="swiper-slide">
               <picture class="swiper-image">
-                <source media="(min-width: 900px)" srcset="src/img/principal_banner_desktop.jpg" />
-                <source media="(min-width: 250px)" srcset="src/img/principal_banner_mobile.jpg" />
+                <source media="(min-width: 600px)" srcset="src/img/principal_banner_desktop_02.jpg" />
+                <source media="(min-width: 250px)" srcset="src/img/principal_banner_mobile_02.jpg" />
                 <img src="src/img/principal_banner_desktop.png" alt="imagem fora de resolução" />
               </picture>
               <div class="swiper-text-container">
@@ -127,7 +136,11 @@
             </div>
 
             <div class="swiper-slide">
-              <img class="swiper-image" src="src/img/principal_banner_mobile.jpg" alt="" srcset="" />
+              <picture class="swiper-image">
+                <source media="(min-width: 600px)" srcset="src/img/principal_banner_desktop.jpg" />
+                <source media="(min-width: 250px)" srcset="src/img/principal_banner_mobile.jpg" />
+                <img src="src/img/principal_banner_desktop.png" alt="imagem fora de resolução" />
+              </picture>
               <div class="swiper-text-container">
                 <div class="swiper-text-titlePrice">
                   <h2 class="swiper-text-title">Mortal Kombat</h2>
@@ -146,6 +159,7 @@
             </div>
           </div>
         </div>
+
         <div class="carousel-info">
           <div class="carousel-title">
             <h3 class="carousel-gameTitle">Mortal Kombat</h3>
@@ -153,7 +167,6 @@
           </div>
 
           <div class="carousel-control">
-            <!-- mostrar paginação -->
             <div class="swiper-pagination swiper-pagination-custom"></div>
             <div class="carousel-buttons">
               <div class="swiper-button-prev swiper-button-custom prev"></div>

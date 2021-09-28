@@ -9,8 +9,12 @@
 .header-container {
   margin-top: 1em;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   width: 90%;
+  @media (min-width: $layout-breakpoint-desktop) {
+    width: 70%;
+  }
 }
 
 .header-left {
@@ -37,6 +41,27 @@
   align-items: center;
   flex-grow: 2;
   justify-content: space-around;
+  @media (min-width: $layout-breakpoint-desktop) {
+    justify-self: flex-end;
+  }
+}
+.header-icon {
+  padding: 0.4em;
+  display: flex;
+}
+
+.icon-hamburger {
+  fill: var(--silver);
+}
+
+.header-icon-text {
+  text-transform: uppercase;
+  padding: 10%;
+  color: var(--white);
+  display: none;
+  @media (min-width: $layout-breakpoint-desktop) {
+    display: flex;
+  }
 }
 .btn-icon {
   background: transparent;
@@ -45,9 +70,15 @@
   border: none;
   cursor: pointer;
 }
-.paper-plane {
-  margin-bottom: 0.4em;
+.search {
+  position: relative;
+  top: 4px;
 }
-.icon-hamburger {
-  fill: var(--silver);
+.paper-plane {
+  position: relative;
+  bottom: 3px;
+}
+.paper-bag {
+  position: relative;
+  bottom: 5px;
 }
