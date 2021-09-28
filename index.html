@@ -3,20 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+
     <link rel="icon" type="image/svg" href="svgs/logoN1.svg" />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
     <!-- Swiper JS -->
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
 
+    <link rel="stylesheet" href="./src/styles/header.css" />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Rush</title>
   </head>
   <!-- 
        #TODO
        [] - mobile first 
-       [] - header
-       [] - banner (carousel)
+       [x] - header
+       [x] - banner (carousel)
        [] - produtos destaque
        [] - produtos prateleira (carousel alike no mobile)
        [] - footer
@@ -112,31 +115,48 @@
 
       <!-- slides topo -->
       <section class="section-topo">
-        <div class="swiper swiper-container">
+        <div class="swiper swiper-container swiper-custom">
           <div class="swiper-wrapper carousel-images">
             <!-- Banners -->
             <div class="swiper-slide">
-              <img class="swiper-image" src="img/principal_banner_mobile.jpg" alt="" srcset="" />
-								<div class="swiper-text-container">
-									<div class="swiper-text-titlePrice">
-										<h2 class="swiper-text-title">Mortal Kombat</h2>
-										<div class="swiper-text-price">
-											<span class="swiper-text-price1">R$ 299</span>
-											<span class="swiper-text-price2">,99</span>
-										</div>
-									</div>
-									<div class="swiper-text-description">
-										<p>
-												Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.
-										</p>
-									</div>
-        				</div>
-						</div>
-            <div class="swiper-slide">
               <img class="swiper-image" src="img/principal_banner_mobile_02.jpg" alt="" srcset="" />
+              <div class="swiper-text-container">
+                <div class="swiper-text-titlePrice">
+                  <h2 class="swiper-text-title">Red dead Redemption 2</h2>
+                  <div class="swiper-text-price">
+                    <span class="swiper-text-price1">R$ 299</span>
+                    <span class="swiper-text-price2">,99</span>
+                  </div>
+                </div>
+                <div class="swiper-text-description">
+                  <p>
+                    Estados Unidos, 1899. O fim da era do velho oeste se aproxima, e os xerifes caçam as últimas gangues fora da lei. Quem
+                    não se rende ou sucumbe, acaba morto.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img class="swiper-image" src="img/principal_banner_mobile.jpg" alt="" srcset="" />
+              <div class="swiper-text-container">
+                <div class="swiper-text-titlePrice">
+                  <h2 class="swiper-text-title">Mortal Kombat</h2>
+                  <div class="swiper-text-price">
+                    <span class="swiper-text-price1">R$ 299</span>
+                    <span class="swiper-text-price2">,99</span>
+                  </div>
+                </div>
+                <div class="swiper-text-description">
+                  <p>
+                    Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem
+                    escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-				
+        </div>
         <div class="carousel-info">
           <div class="carousel-title">
             <h3 class="carousel-gameTitle">Mortal Kombat</h3>
@@ -145,10 +165,10 @@
 
           <div class="carousel-control">
             <!-- mostrar paginação -->
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination swiper-pagination-custom"></div>
             <div class="carousel-buttons">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev swiper-button-custom prev"></div>
+              <div class="swiper-button-next swiper-button-custom"></div>
             </div>
           </div>
         </div>
@@ -156,34 +176,66 @@
 
       <div class="container-main">
         <section class="section-banner">
-          <div class="banner-conteudo"></div>
-          <div class="banner-conteudo"></div>
+          <div class="banner-conteudo">
+            <img class="banner-image" src="img/zelda_banner.jpg" alt="" srcset="" />
+            <div class="banner-title">
+              <div class="banner-column"></div>
+              <div class="banner-text">
+                <h3>The Legend Of zelda - Breath of the wild</h3>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="banner-conteudo">
+            <img class="banner-image" src="img/sekiro_banner.jpg" alt="" srcset="" />
+            <div class="banner-title">
+              <div class="banner-column"></div>
+              <div class="banner-text">
+                <h3>SEKIRO - Shadows die twice</h3>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="section-produtos">
           <div class="title-shelf">
+            <img src="svgs/grid-prateleira.svg" alt="" class="produto-img" />
             <h2>Produtos em destaque</h2>
           </div>
-          <div class="grid-produtos">
-            <article class="produto">
-              <header class="produto-header">
-                <img src="svgs/grid-prateleira.svg" alt="" class="produto-img" />
-              </header>
-              <div class="produto-body">
-                <h3 class="produto-name">Produto</h3>
-                <span class="produto-preco">R$ </span>
-                <button class="btn-comprar">Comprar</button>
+
+          <div class="shelf-products">
+            <div class="swiper-button-prev2">
+              <img src="svgs/angle-left-solid.svg" alt="" />
+            </div>
+            <div class="swiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product">
+                    <img src="img/product-cyberpunk2077.png" alt="" />
+                    <span class="line-product"></span>
+                    <div class="info-product">
+                      <div class="name-product">Cyperpunk 2077</div>
+                      <span class="price-product"> R$ 200,00 </span>
+                      <button class="button-buy">Comprar</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </article>
+            </div>
+            <div class="swiper-button-next2">
+              <img src="svgs/angle-right-solid.svg" alt="" />
+            </div>
           </div>
         </section>
       </div>
     </main>
     <footer class="footer">
       <div class="footer-left">
-        <img class="footer-logo" src=".img/logo_header 1.png" alt="" />
+        <img class="footer-logo" src="img/logo_header 1.png" alt="" />
       </div>
-      <div class="footer-righ">
+      <div class="footer-right">
         <span class="footer-text">Agência N1 - Todos os direitos reservados</span>
       </div>
     </footer>

@@ -22,3 +22,26 @@ const swiper = new Swiper('.swiper', {
 		delay: 200000,
 	},
 });
+
+const swiper2 = new Swiper('.swiper2', {
+	direction: 'horizontal',
+	loop: true,
+
+	pagination: {
+		el: '.swiper-pagination2',
+		type: 'fraction',
+	},
+
+	navigation: {
+		nextEl: '.swiper-button-next2',
+		prevEl: '.swiper-button-prev2',
+	},
+
+	scrollbar: {
+		el: '.swiper-scrollbar',
+	},
+
+	autoplay: {
+		delay: 20000,
+	},
+});
