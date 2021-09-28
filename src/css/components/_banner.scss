@@ -1,0 +1,53 @@
+.section-banner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.banner-conteudo {
+  position: relative;
+  width: 90%;
+  margin: 1em;
+}
+.banner-image {
+  max-width: 100%;
+  height: auto;
+}
+.banner-title {
+  height: 31.64px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.banner-column {
+  height: 100%;
+  width: 5px;
+  background: var(--dark-blue);
+  border-radius: 0px 0px 0px 5px;
+}
+.banner-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  background: var(--blue);
+  border-radius: 0px 0px 5px 0px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--dark-blue);
+  flex-grow: 1;
+}
+.banner-text h3 {
+  text-align: center;
+}
+.line {
+  margin-left: 1em;
+  border: 1px solid var(--dark-blue);
+  flex-grow: 1;
+}

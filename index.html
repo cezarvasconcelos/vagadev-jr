@@ -4,33 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/svg" href="svgs/logoN1.svg" />
+    <link rel="icon" type="image/svg" href="src/img/logo_header 1.png" />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css" />
     <!-- Swiper JS -->
-    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
 
-    <link rel="stylesheet" href="./src/styles/header.css" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="./src/styles/header.css" /> -->
+    <link rel="stylesheet" href="src/style.css" />
 
     <title>Rush</title>
   </head>
-  <!-- 
-       #TODO
-       [] - mobile first 
-       [x] - header
-       [x] - banner (carousel)
-       [] - produtos destaque
-       [] - produtos prateleira (carousel alike no mobile)
-       [] - footer
-       [] - menu
-       [] - desktop
-       [] - fonte (Roboto)
-       [] - animações
-            [] - "pedido sucesso"
-            [] - "botão comprar/comprado"
-            [] - icone carrinho atualizado (qtde)
-    -->
+
   <body>
     <header class="header">
       <!-- Não precisa existir eu acho -->
@@ -69,7 +54,7 @@
               </g>
             </svg>
           </button>
-          <a class="logo-anchor"> <img class="logo" src="svgs/logoN1.svg" /></a>
+          <a class="logo-anchor"> <img class="logo" src="src/svgs/logoN1.svg" /></a>
         </div>
 
         <div class="header-right">
@@ -119,7 +104,11 @@
           <div class="swiper-wrapper carousel-images">
             <!-- Banners -->
             <div class="swiper-slide">
-              <img class="swiper-image" src="img/principal_banner_mobile_02.jpg" alt="" srcset="" />
+              <picture class="swiper-image">
+                <source media="(min-width: 900px)" srcset="src/img/principal_banner_desktop.jpg" />
+                <source media="(min-width: 250px)" srcset="src/img/principal_banner_mobile.jpg" />
+                <img src="src/img/principal_banner_desktop.png" alt="imagem fora de resolução" />
+              </picture>
               <div class="swiper-text-container">
                 <div class="swiper-text-titlePrice">
                   <h2 class="swiper-text-title">Red dead Redemption 2</h2>
@@ -138,7 +127,7 @@
             </div>
 
             <div class="swiper-slide">
-              <img class="swiper-image" src="img/principal_banner_mobile.jpg" alt="" srcset="" />
+              <img class="swiper-image" src="src/img/principal_banner_mobile.jpg" alt="" srcset="" />
               <div class="swiper-text-container">
                 <div class="swiper-text-titlePrice">
                   <h2 class="swiper-text-title">Mortal Kombat</h2>
@@ -177,7 +166,7 @@
       <div class="container-main">
         <section class="section-banner">
           <div class="banner-conteudo">
-            <img class="banner-image" src="img/zelda_banner.jpg" alt="" srcset="" />
+            <img class="banner-image" src="src/img/zelda_banner.jpg" alt="" srcset="" />
             <div class="banner-title">
               <div class="banner-column"></div>
               <div class="banner-text">
@@ -188,7 +177,7 @@
           </div>
 
           <div class="banner-conteudo">
-            <img class="banner-image" src="img/sekiro_banner.jpg" alt="" srcset="" />
+            <img class="banner-image" src="src/img/sekiro_banner.jpg" alt="" srcset="" />
             <div class="banner-title">
               <div class="banner-column"></div>
               <div class="banner-text">
@@ -201,19 +190,19 @@
 
         <section class="section-produtos">
           <div class="title-shelf">
-            <img src="svgs/grid-prateleira.svg" alt="" class="produto-img" />
+            <img src="src/svgs/grid-prateleira.svg" alt="" class="produto-img" />
             <h2>Produtos em destaque</h2>
           </div>
 
           <div class="shelf-products">
             <div class="swiper-button-prev2">
-              <img src="svgs/angle-left-solid.svg" alt="" />
+              <img src="src/svgs/angle-left-solid.svg" alt="" />
             </div>
             <div class="swiper2">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="product">
-                    <img src="img/product-cyberpunk2077.png" alt="" />
+                    <img src="src/img/product-cyberpunk2077.png" alt="" />
                     <span class="line-product"></span>
                     <div class="info-product">
                       <div class="name-product">Cyperpunk 2077</div>
@@ -225,7 +214,7 @@
               </div>
             </div>
             <div class="swiper-button-next2">
-              <img src="svgs/angle-right-solid.svg" alt="" />
+              <img src="src/svgs/angle-right-solid.svg" alt="" />
             </div>
           </div>
         </section>
@@ -233,7 +222,7 @@
     </main>
     <footer class="footer">
       <div class="footer-left">
-        <img class="footer-logo" src="img/logo_header 1.png" alt="" />
+        <img class="footer-logo" src="src/img/logo_header 1.png" alt="" />
       </div>
       <div class="footer-right">
         <span class="footer-text">Agência N1 - Todos os direitos reservados</span>
@@ -241,5 +230,5 @@
     </footer>
   </body>
   <!-- <script src="./src/index.js"></script> -->
-  <script type="module" src="swipperInit.js"></script>
+  <script type="module" src="./src/js/lib/swiperInitializer.js"></script>
 </html>

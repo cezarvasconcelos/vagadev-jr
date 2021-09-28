@@ -1,0 +1,16 @@
+.title-shelf {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.title-shelf img {
+  height: 18px;
+  width: 18px;
+  margin-right: 1em;
+}
+.title-shelf h2 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--dark-blue);
+}

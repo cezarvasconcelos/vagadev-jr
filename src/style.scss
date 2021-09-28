@@ -1,0 +1,81 @@
+:root {
+  /* Color Styles */
+  --dark-blue: #084154;
+  --blue: #3ec6e0;
+  --silver: #ebebeb;
+  --swiper-navigation-size: 1.2em;
+  --swiper-theme-color: #ffffff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+@import "css/components/header";
+@import "css/components/swiper-container";
+@import "css/components/carousel-info";
+@import "css/components/banner";
+@import "css/components/title-shelf";
+@import "css/components/shelf-products";
+@import "css/components/footer";
+
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  /* background-color: var(--dark-blue); */
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  width: 50%;
+  background: var(--dark-blue);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+
+/* Section main */
+
+.container-main {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section-produtos {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer */
+.footer {
+  margin-top: 4em;
+  width: 100%;
+  height: 68px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
