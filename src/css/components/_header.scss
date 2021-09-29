@@ -6,15 +6,14 @@
   justify-content: center;
   background: transparent;
 }
+
 .header-container {
   margin-top: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  @media (min-width: $layout-breakpoint-desktop) {
-    width: 70%;
-  }
+  max-width: $layout-max-width;
 }
 
 .header-left {
@@ -40,14 +39,23 @@
   display: flex;
   align-items: center;
   flex-grow: 2;
-  justify-content: space-around;
-  @media (min-width: $layout-breakpoint-desktop) {
-    justify-self: flex-end;
-  }
+  justify-content: flex-end;
 }
 .header-icon {
   padding: 0.4em;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  @media (min-width: $layout-breakpoint-desktop) {
+    width: 150px;
+    &:nth-child(2) {
+      padding-left: 1em;
+      border-left: 1px solid var(--white);
+      border-right: 1px solid var(--white);
+      height: 2.5em;
+    }
+  }
 }
 
 .icon-hamburger {
@@ -72,7 +80,7 @@
 }
 .search {
   position: relative;
-  top: 4px;
+  // top: 4px;
 }
 .paper-plane {
   position: relative;

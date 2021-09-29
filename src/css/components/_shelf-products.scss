@@ -7,6 +7,9 @@
 
 .swiper2 {
   width: 80%;
+  outline: black;
+  box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
 }
 .swiper-slide {
   overflow: hidden;
@@ -58,6 +61,7 @@
   background-color: var(--blue);
   height: 1.35px;
 }
+
 .info-product {
   color: var(--dark-blue);
   background-color: #f5f5f5;
@@ -67,6 +71,7 @@
   flex-direction: column;
   padding: 1em;
 }
+
 .name-product {
   font-size: 14px;
   line-height: 16px;

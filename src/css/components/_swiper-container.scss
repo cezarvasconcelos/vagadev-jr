@@ -16,6 +16,15 @@
   width: 100%;
   bottom: 0;
   padding-right: 1.5em;
+  @media (min-width: $layout-breakpoint-desktop) {
+    width: 500px;
+    z-index: 99;
+    background: none;
+    margin-right: 20px;
+    // background: rgba(0, 0, 0, 0.65);
+    right: 10%;
+    top: 30%;
+  }
 }
 .swiper-image {
   width: 100%;
