@@ -58,14 +58,21 @@ button svg {
 .section-topo {
   display: flex;
   flex-direction: column;
-  height: 480px;
+
   width: 100%;
   @media (min-width: $layout-breakpoint-desktop) {
-    height: 720px;
+    min-height: 560px;
+    max-height: 720px;
+  }
+  @media (max-width: $layout-breakpoint-desktop) {
+    height: 480px;
   }
 }
 
 .container-main {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $layout-max-width;
   margin-top: 2em;
   display: flex;
   flex-direction: column;

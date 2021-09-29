@@ -4,6 +4,12 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  @media (min-width: $layout-breakpoint-desktop) {
+    flex-wrap: nowrap;
+    margin-top: -10vh;
+    z-index: 99;
+  }
 }
 .banner-conteudo {
   position: relative;

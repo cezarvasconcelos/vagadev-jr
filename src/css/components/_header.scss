@@ -8,12 +8,13 @@
 }
 
 .header-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $layout-max-width;
   margin-top: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  max-width: $layout-max-width;
 }
 
 .header-left {
