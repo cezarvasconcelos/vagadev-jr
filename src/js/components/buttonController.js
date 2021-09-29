@@ -9,7 +9,7 @@ let counterBag = 0;
 btnMenuOpen.addEventListener('click', abreFechaMenu);
 btnMenuClosed.addEventListener('click', abreFechaMenu);
 
-percorreAndAdicionaFunctionsToElementList(btnComprarList, abreFechaMenu);
+percorreAndAdicionaFunctionsToElementList(btnComprarList, alteraEstadoBotaoCompra);
 
 
 
