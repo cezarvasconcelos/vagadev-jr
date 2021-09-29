@@ -432,7 +432,7 @@
   .section-banner {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-top: -10vh;
+    margin-top: -20vh;
     z-index: 99;
   }
 }
