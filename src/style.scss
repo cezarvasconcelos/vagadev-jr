@@ -8,6 +8,8 @@ $layout-max-width: 1200px;
 @import "css/components/title-shelf";
 @import "css/components/shelf-products";
 @import "css/components/footer";
+@import "css/components/menu-hamburger";
+@import "css/components/modal";
 
 :root {
   /* Color Styles */
@@ -17,6 +19,7 @@ $layout-max-width: 1200px;
   --swiper-navigation-size: 1.2em;
   --swiper-theme-color: #ffffff;
   --white: #ffffff;
+  --darkish-blue: #062c38;
   --font-size: 16px;
 }
 
@@ -25,7 +28,7 @@ $layout-max-width: 1200px;
   margin: 0;
   box-sizing: border-box;
   font-size: var(--font-size);
-  max-width: 1600px;
+  // max-width: 1600px;
 }
 
 html {
@@ -81,7 +84,7 @@ button svg {
 }
 
 .section-produtos {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -95,3 +98,5 @@ button svg {
   text-align: center;
   align-items: center;
 }
+
+

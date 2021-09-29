@@ -6,9 +6,9 @@
 
     <link rel="icon" type="image/svg" href="src/img/logo_header 1.png" />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/src/css/package/swiper-bundle.min.css" />
     <!-- Swiper JS -->
-    <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="/src/css/package/swiper-bundle.min.css"></script>
 
     <!-- <link rel="stylesheet" href="./src/styles/header.css" /> -->
     <link rel="stylesheet" href="src/style.css" />
@@ -20,7 +20,7 @@
     <header class="header">
       <div class="header-container">
         <div class="header-left">
-          <button class="btn-icon">
+          <button class="btn-icon" id="btn-menu">
             <svg class="icon-hamburger" width="30" height="24" viewBox="0 0 30 24">
               <g id="icon_hamburguer" transform="translate(-382 -48)" style="fill: #000000">
                 <rect
@@ -53,7 +53,47 @@
               </g>
             </svg>
           </button>
+          <button class="btn-icon" id="btn-menu-close">
+            <svg width="32px" height="24px" viewBox="0 0 24 23" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.436 1.393L1.344 20.485a1.5 1.5 0 102.122 2.122L22.558 3.515a1.5 1.5 0 00-2.122-2.122z"></path>
+              <path d="M22.606 20.436L3.514 1.344a1.5 1.5 0 00-2.121 2.122l19.092 19.092a1.5 1.5 0 002.121-2.122z"></path>
+            </svg>
+          </button>
+
           <a class="logo-anchor"> <img class="logo" src="src/svgs/logoN1.svg" /></a>
+        </div>
+
+        <div class="menu-hamburger-container">
+          <span class="menu-hamburger-triangle"></span>
+          <div class="menu-hamburguer-content">
+            <nav aria-label="Navegue nossos títulos por categoria" class="menu-hamburger-columns">
+              <div class="menu-hamburger-list-container">
+                <h3 class="menu-hamburger-list-title">Luta</h3>
+                <ul class="menu-hamburger-list-ul">
+                  <li class="menu-hamburger-list-li">Mortal Kombat</li>
+                  <li class="menu-hamburger-list-li">Smash Bros</li>
+                  <li class="menu-hamburger-list-li">Tekken</li>
+                  <li class="menu-hamburger-list-li">DBZ</li>
+                </ul>
+              </div>
+              <div class="menu-hamburger-list-container">
+                <h3 class="menu-hamburger-list-title">Ação / Aventura</h3>
+                <ul class="menu-hamburger-list-ul">
+                  <li class="menu-hamburger-list-li">GTA V</li>
+                  <li class="menu-hamburger-list-li">Tomb Raider</li>
+                  <li class="menu-hamburger-list-li">HALO</li>
+                  <li class="menu-hamburger-list-li">Call of Duty</li>
+                </ul>
+              </div>
+              <div class="menu-hamburger-list-container">
+                <h3 class="menu-hamburger-list-title">Corrida</h3>
+                <ul class="menu-hamburger-list-ul">
+                  <li class="menu-hamburger-list-li">NEED For SPEED</li>
+                  <li class="menu-hamburger-list-li">Forza Horizon</li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
 
         <div class="header-right">
@@ -106,6 +146,20 @@
 
     <main>
       <!-- Modal ao compar algo (em breve)-->
+      <div class="modal" id="modal-one">
+        <div class="modal-bg modal-exit"></div>
+        <div class="modal-container">
+          <button class="modal-close modal-exit">
+            <img src="src/img/close-btn.png" alt="" />
+          </button>
+          <div class="modal-mensagem">
+            <span class="modal-line"></span>
+            <h2>Pedido realizado com sucesso!</h2>
+            <span class="modal-line"></span>
+          </div>
+          <img class="modal-image" src="src/img/mario.png" alt="" srcset="" />
+        </div>
+      </div>
 
       <!-- slides topo -->
       <section class="section-topo">
@@ -116,7 +170,7 @@
               <picture class="swiper-image">
                 <source media="(min-width: 600px)" srcset="src/img/principal_banner_desktop_02.jpg" />
                 <source media="(min-width: 250px)" srcset="src/img/principal_banner_mobile_02.jpg" />
-                <img src="src/img/principal_banner_desktop.png" alt="imagem fora de resolução" />
+                <img src="src/img/principal_banner_desktop.jpg" alt="imagem fora de resolução" />
               </picture>
               <div class="swiper-text-container">
                 <div class="swiper-text-titlePrice">
@@ -139,7 +193,7 @@
               <picture class="swiper-image">
                 <source media="(min-width: 600px)" srcset="src/img/principal_banner_desktop.jpg" />
                 <source media="(min-width: 250px)" srcset="src/img/principal_banner_mobile.jpg" />
-                <img src="src/img/principal_banner_desktop.png" alt="imagem fora de resolução" />
+                <img src="src/img/principal_banner_desktop.jpg" alt="imagem fora de resolução" />
               </picture>
               <div class="swiper-text-container">
                 <div class="swiper-text-titlePrice">
@@ -224,6 +278,17 @@
                     </div>
                   </div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <img src="src/img/product-cyberpunk2077.png" alt="" />
+                    <span class="line-product"></span>
+                    <div class="info-product">
+                      <div class="name-product">Cyperpunk 2077</div>
+                      <span class="price-product"> R$ 200,00 </span>
+                      <button data-modal="modal-one" class="button-buy">Comprar</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="swiper-button-next2">
@@ -243,5 +308,5 @@
     </footer>
   </body>
   <!-- <script src="./src/index.js"></script> -->
-  <script type="module" src="./src/js/lib/swiperInitializer.js"></script>
+  <script type="module" src="./src/index.js"></script>
 </html>

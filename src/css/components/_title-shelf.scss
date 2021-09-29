@@ -2,15 +2,28 @@
   width: 100%;
   display: flex;
   align-items: center;
+  height: 2em;
+  padding-left: 1em;
+  @media (min-width: $layout-breakpoint-desktop) {
+    height: 4em;
+  }
 }
 .title-shelf img {
   height: 18px;
   width: 18px;
   margin-right: 1em;
+  @media (min-width: $layout-breakpoint-desktop) {
+    height: 2.5em;
+    width: 2.5em;
+  }
 }
 .title-shelf h2 {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.2em;
   line-height: 21px;
   color: var(--dark-blue);
+  @media (min-width: $layout-breakpoint-desktop) {
+    font-size: 2.4em;
+    line-height: 2em;
+  }
 }

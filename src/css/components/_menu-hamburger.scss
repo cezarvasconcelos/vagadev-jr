@@ -1,0 +1,122 @@
+.menu-hamburger-container {
+  display: none;
+  position: absolute;
+  // width: 50%;
+  border: 4px solid var(--blue);
+  border-radius: 10px;
+  top: 80px;
+  background-color: var(--dark-blue);
+  margin-left: -15px;
+  box-shadow: 15px 15px 0px 0 var(--blue);
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+  @media (max-width: $layout-breakpoint-desktop) {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: auto;
+    margin-left: 0;
+    border: none;
+    border-radius: 0;
+  }
+}
+#btn-menu-close {
+  display: none;
+}
+.menu-hamburger-triangle {
+  width: 20px;
+  height: 20px;
+  background-color: var(--blue);
+  position: absolute;
+  left: 15px;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -1;
+  @media (max-width: $layout-breakpoint-desktop) {
+    display: none;
+  }
+}
+.menu-hamburguer-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  // margin-left: 50px;
+  // margin-right: 50px;
+  @media (max-width: $layout-breakpoint-desktop) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.menu-hamburger-columns {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  padding: 1em 0em 1em 0em;
+  @media (max-width: $layout-breakpoint-desktop) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.menu-hamburger-list-container {
+  // outline: 1px solid blue;
+  color: var(--white);
+  list-style: none;
+  margin: 1.5em;
+  width: 160px;
+  max-width: 100%;
+  @media (max-width: $layout-breakpoint-desktop) {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 0.8em 0 0.8em 0;
+    &:nth-child(2) {
+      border-top: 1px solid var(--darkish-blue);
+      border-bottom: 1px solid var(--darkish-blue);
+    }
+  }
+}
+
+.menu-hamburger-list-title {
+  white-space: nowrap;
+  // outline: 1px solid blue;
+  max-width: 150px;
+  width: 70%;
+  // height: 70%;
+  line-break: unset;
+  padding: 5px 10px 5px 10px;
+}
+.menu-hamburger-list-ul {
+  white-space: nowrap;
+  // outline: 1px solid blue;
+  list-style: none;
+}
+.menu-hamburger-list-li {
+  // outline: 1px solid blue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2em;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  &:hover,
+  :active {
+    background-color: var(--blue);
+  }
+  @media (max-width: $layout-breakpoint-desktop) {
+    line-height: 2em;
+    margin-top: 2px;
+    padding: 5px 10px 5px 10px;
+  }
+}
