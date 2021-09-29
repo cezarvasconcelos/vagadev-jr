@@ -26,3 +26,28 @@ function abreFechaMenu() {
 		menuOpen = true;
 	}
 }
+
+const btnComprarList = document.getElementsByClassName('button-buy');
+
+for (let btn of btnComprarList) {
+	btn.addEventListener('click', () => {
+		alteraEstadoBotaoCompra(btn);
+	});
+}
+
+
+//Não é o ideal, mas foi rápido
+function alteraEstadoBotaoCompra(element) {
+	let spanTexto = element.getElementsByClassName('bTexto');
+	let imgBtn = element.getElementsByClassName('btn-image');
+	if (element.classList.contains('button-buy-comprado')) {
+		element.classList.remove('button-buy-comprado')
+		spanTexto[0].innerHTML = "COMPRAR";
+		imgBtn[0].style.display = 'none';
+	} else {
+		element.classList.add('button-buy-comprado')
+		spanTexto[0].innerHTML = "COMPRADO!";
+		imgBtn[0].style.display = 'flex';
+	}
+
+}
