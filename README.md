@@ -29,6 +29,7 @@
 - [x] "pedido sucesso"
 - [x] "botão comprar/comprado"
 - [x] icone carrinho atualizado (qtde)
+- [ ] organização de arquivos
 
 # Requisitos de avaliação
 
