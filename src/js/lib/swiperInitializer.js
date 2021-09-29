@@ -47,3 +47,9 @@ const swiper2 = new Swiper('.swiper2', {
 		delay: 20000,
 	},
 });
+
+
+swiper.on('transitionEnd', function () {
+	let title = document.getElementById('gameTitle');
+	title.innerHTML = (swiper.realIndex == 0) ? 'Red Dead Redemption 2' : 'Mortal Kombat';
+});
