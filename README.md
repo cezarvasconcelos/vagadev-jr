@@ -1,4 +1,6 @@
-# TODO
+# Teste para vaga de Front-End Jr
+
+## TODO
 
 ## Mobile
 
@@ -8,25 +10,25 @@
 - [x] produtos destaque
 - [x] produtos prateleira (carousel alike no mobile)
 - [x] footer
-- [ ] menu
+- [x] menu
 
 ## Desktop
 
-- [ ] desktop
+- [x] desktop
 - [x] header
 - [x] banner (carousel)
-- [ ] produtos destaque
-- [ ] produtos prateleira
-- [ ] footer
-- [ ] menu
+- [x] produtos destaque
+- [x] produtos prateleira
+- [x] footer
+- [x] menu
 
 ## Geral
 
-- [ ] animações
+- [x] animações
 - [x] fonte (Roboto)
-- [ ] "pedido sucesso"
-- [ ] "botão comprar/comprado"
-- [ ] icone carrinho atualizado (qtde)
+- [x] "pedido sucesso"
+- [x] "botão comprar/comprado"
+- [x] icone carrinho atualizado (qtde)
 
 # Requisitos de avaliação
 
