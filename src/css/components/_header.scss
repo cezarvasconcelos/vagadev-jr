@@ -93,3 +93,18 @@
   position: relative;
   bottom: 5px;
 }
+.header-icon-qtd {
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--blue);
+  z-index: 99;
+  margin-left: -5px;
+  border-radius: 50px;
+  margin-top: 2px;
+}
+
+#qtde-counter {
+  color: var(--white);
+  margin-left: 6px;
+}

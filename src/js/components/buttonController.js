@@ -1,9 +1,16 @@
 const btnMenuOpen = document.getElementById('btn-menu');
 const btnMenuClosed = document.getElementById('btn-menu-close');
+const counterBagElement = document.getElementById('qtde-counter');
+const btnComprarList = document.getElementsByClassName('button-buy');
+
 let menuOpen = false;
+let counterBag = 0;
 
 btnMenuOpen.addEventListener('click', abreFechaMenu);
 btnMenuClosed.addEventListener('click', abreFechaMenu);
+
+percorreAndAdicionaFunctionsToElementList(btnComprarList, abreFechaMenu);
+
 
 
 function abreFechaMenu() {
@@ -27,16 +34,20 @@ function abreFechaMenu() {
 	}
 }
 
-const btnComprarList = document.getElementsByClassName('button-buy');
 
-for (let btn of btnComprarList) {
-	btn.addEventListener('click', () => {
-		alteraEstadoBotaoCompra(btn);
-	});
+
+
+function percorreAndAdicionaFunctionsToElementList(domElementList, funcao) {
+	for (let el of domElementList) {
+		el.addEventListener('click', () => {
+			funcao(el);
+		});
+	}
 }
 
 
-//Não é o ideal, mas foi rápido
+
+//Não é o ideal, mas foi rápido (pra desenvolver)
 function alteraEstadoBotaoCompra(element) {
 	let spanTexto = element.getElementsByClassName('bTexto');
 	let imgBtn = element.getElementsByClassName('btn-image');
@@ -44,10 +55,24 @@ function alteraEstadoBotaoCompra(element) {
 		element.classList.remove('button-buy-comprado')
 		spanTexto[0].innerHTML = "COMPRAR";
 		imgBtn[0].style.display = 'none';
+		counterBag--;
 	} else {
 		element.classList.add('button-buy-comprado')
 		spanTexto[0].innerHTML = "COMPRADO!";
 		imgBtn[0].style.display = 'flex';
+		counterBag++;
 	}
+	verificaCounterQtde();
+}
 
+
+function verificaCounterQtde() {
+	let divBag = document.getElementById('divBagCounter');
+	if (counterBag > 0) {
+		divBag.style.display = 'flex';
+	} else {
+		divBag.style.display = 'none';
+
+	}
+	counterBagElement.innerHTML = counterBag;
 }

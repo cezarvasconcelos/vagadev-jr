@@ -5,6 +5,7 @@ const swiper = new Swiper('.swiper', {
 	direction: 'horizontal',
 	loop: true,
 
+
 	pagination: {
 		el: '.swiper-pagination',
 		type: 'fraction',
@@ -27,7 +28,7 @@ const swiper = new Swiper('.swiper', {
 const swiper2 = new Swiper('.swiper2', {
 	direction: 'horizontal',
 	loop: true,
-
+	slidesPerView: 'auto',
 	pagination: {
 		el: '.swiper-pagination2',
 		type: 'fraction',
