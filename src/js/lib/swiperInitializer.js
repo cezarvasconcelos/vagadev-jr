@@ -1,5 +1,5 @@
 
-import Swiper from '../../../node_modules/swiper/swiper-bundle.esm.browser.js'
+import Swiper from './package/swiper-bundle.esm.browser.min.js';
 
 const swiper = new Swiper('.swiper', {
 	direction: 'horizontal',
