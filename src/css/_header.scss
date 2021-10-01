@@ -1,0 +1,38 @@
+@import 'components/logo';
+@import 'components/header-icon';
+@import 'components/menu-hamburger';
+
+.header {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: transparent;
+}
+
+.header-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  max-width: $layout-max-width;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  justify-self: flex-start;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+.header-right {
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+  justify-content: flex-end;
+}

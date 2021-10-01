@@ -48,7 +48,7 @@
 
 - [x] icone carrinho atualizado (qtde)
 
-- [ ] organização de arquivos
+- [x] organização de arquivos
 
 # Requisitos de avaliação
 
