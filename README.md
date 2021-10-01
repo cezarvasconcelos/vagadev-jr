@@ -1,34 +1,53 @@
 # Teste para vaga de Front-End Jr
 
+**_Obs:_** _commits feitos após a entrega estão identificados com "(+)"_
+
 ## TODO
 
 ## Mobile
 
 - [x] mobile first
+
 - [x] header
+
 - [x] banner (carousel)
+
 - [x] produtos destaque
+
 - [x] produtos prateleira (carousel alike no mobile)
+
 - [x] footer
+
 - [x] menu
 
 ## Desktop
 
 - [x] desktop
+
 - [x] header
+
 - [x] banner (carousel)
+
 - [x] produtos destaque
+
 - [x] produtos prateleira
+
 - [x] footer
+
 - [x] menu
 
 ## Geral
 
 - [x] animações
+
 - [x] fonte (Roboto)
+
 - [x] "pedido sucesso"
+
 - [x] "botão comprar/comprado"
+
 - [x] icone carrinho atualizado (qtde)
+
 - [ ] organização de arquivos
 
 # Requisitos de avaliação

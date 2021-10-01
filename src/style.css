@@ -145,18 +145,19 @@
 
 .header-icon-qtd {
   display: none;
-  width: 20px;
-  height: 20px;
   background-color: var(--blue);
   z-index: 99;
   margin-left: -5px;
-  border-radius: 50px;
+  border-radius: 50%;
   margin-top: 2px;
+  width: 100%;
+  height: 100%;
+  max-width: 20px;
 }
 
 #qtde-counter {
   color: var(--white);
-  margin-left: 6px;
+  margin-left: 5px;
 }
 
 .swiper-container {
@@ -615,12 +616,13 @@
 }
 
 .swiper-product-shelf {
-  margin: 3em;
+  padding: 1em;
   width: 300px;
 }
 
 @media (min-width: 900px) {
   .swiper-product-shelf {
+    padding: 3em;
     width: 450px;
   }
 }
@@ -868,7 +870,7 @@
   }
 }
 
-.menu-hamburguer-content {
+.menu-hamburger-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -886,7 +888,8 @@
 }
 
 @media (max-width: 900px) {
-  .menu-hamburguer-content {
+  .menu-hamburger-content {
+    margin-top: 4em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1047,6 +1050,7 @@
           justify-content: space-between;
   width: 50%;
   max-width: 400px;
+  min-width: 300px;
 }
 
 .modal-close {
@@ -1130,6 +1134,12 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: var(--font-size);
+}
+
+@media (max-width: 900px) {
+  * {
+    font-size: 13px;
+  }
 }
 
 html {

@@ -23,13 +23,14 @@ function abreFechaMenu() {
 		element.style.visibility = 'hidden';
 		element.style.opacity = 0;
 		menuOpen = false;
+		document.body.style.overflow = 'scroll';
 	} else {
 		btnMenuClosed.style.display = 'flex';
 		btnMenuOpen.style.display = 'none';
 		element.style.display = 'flex';
 		element.style.visibility = 'visible';
-
 		element.style.opacity = 1;
+		document.body.style.overflow = 'hidden';
 		menuOpen = true;
 	}
 }

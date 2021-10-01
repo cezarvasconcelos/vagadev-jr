@@ -38,7 +38,7 @@
     display: none;
   }
 }
-.menu-hamburguer-content {
+.menu-hamburger-content {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -46,7 +46,9 @@
   align-items: center;
   // margin-left: 50px;
   // margin-right: 50px;
+
   @media (max-width: $layout-breakpoint-desktop) {
+    margin-top: 4em;
     flex-direction: column;
     justify-content: center;
   }

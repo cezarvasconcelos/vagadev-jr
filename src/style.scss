@@ -29,6 +29,9 @@ $layout-max-width: 1200px;
   box-sizing: border-box;
   font-size: var(--font-size);
   // max-width: 1600px;
+  @media (max-width: $layout-breakpoint-desktop) {
+    font-size: 13px;
+  }
 }
 
 html {
@@ -98,5 +101,3 @@ button svg {
   text-align: center;
   align-items: center;
 }
-
-
